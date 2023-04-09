@@ -1,17 +1,13 @@
 #include "main.h"
 
 /**
- * print_binary - Prints the binary that is equal to the decimal of a number.
- * @n: Number to be printed in binary.
+ * print_binary - This Prints the binary that is equal to a decimal number.
+ * @n: Number printed in binary.
  */
 void print_binary(unsigned long int n)
 {
-	int i, count = 0;
-	unsigned long int current;
-	{
-		if (n > 1)
-			print_binary(n >> 1);
+	if (n > 1)
+		print_binary(n >> 1);
 
-		_putchar((n & 1) + '0');
-	}
+	_putchar((n & 1) + '0');
 }
